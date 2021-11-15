@@ -38,7 +38,7 @@ function fetchPokemon() {
 fetchPokemon()
 
 function newFunction() {
-    var audio = new Audio('https://diwalker.github.io/Pokedex/media/opening.mp3');
+    var audio = new Audio('https://diwalker.github.io/pokedex/media/opening.mp3');
     audio.addEventListener('canplaythrough', function () {
         audio.play();
     });

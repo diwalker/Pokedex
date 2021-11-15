@@ -1,0 +1,221 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(186, 112, 255));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.pika {
+	width: 230px;
+	height: 230px;
+	margin-left: 690px;	
+	margin-bottom: -90px;	
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+	color: rgb(255, 255, 115);
+	text-shadow: 2px 2px black;
+}
+
+input {
+	align-items: center;
+	border-radius: 25px;
+	margin-left: 665px;
+	width: 240px;
+	height: 40px;
+	font-size: 15px;
+	margin-top: -960px;
+	margin-bottom: -10px;
+	border: 1px solid #ccc;
+	color: #333;
+	background-color: #f2f2f2;
+	font-size: 20px;
+	font-family: rubik;
+	padding-left: 20px;
+
+}
+
+/* webkit solution */
+::-webkit-input-placeholder { 
+	font-family: FontAwesome;
+	text-align:right; 
+  }
+  /* mozilla solution */
+  input:-moz-placeholder { 
+	font-family: FontAwesome;
+	text-align:right; 
+  }
+
+  textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+button {
+		font-size:18px;
+		font-family:Arial;
+		width:43px;
+		height: 40px;
+		border-width:1px;
+		color:#333333;
+		border-color:#ffaa22;
+		font-weight:bold;
+		border-top-left-radius:42px;
+		border-top-right-radius:42px;
+		border-bottom-left-radius:42px;
+		border-bottom-right-radius:42px;
+		box-shadow: 0px 1px 0px 0px #fff6af;
+		text-shadow: 0px 1px 0px #ffee66;
+		background: rgb(255, 255, 115);
+	  }
+	  
+	  .button:hover {
+		background: #ffab23
+	  }
+		 
+
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 5fr));
+	grid-gap: 15px;
+	padding-inline-start: 0;
+	box-shadow: #222;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 50px;
+	position:relative;
+	box-shadow: 1px 1px black;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water, .ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+	font-family: rubik;
+
+}
+
+.card-image {
+	height: 150px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}

@@ -11,9 +11,9 @@
 <body>
 
   <div class="container">
-    <img class="pika" src="/media/pikachu.png" alt="pikachu">
+    <img class="pika" src="https://diwalker.github.io/pokedex/media/pikachu.png" alt="pikachu">
     <h1>Pokedex</h1>
-    <input type="search" id="pesquisa" oninput="limpar()" placeholder="&#xF002"> 
+    <input type="search" id="pesquisa" oninput="limpar()" placeholder="&#xF002">
     <button type="button" id="button" onclick="filtrar()">Ok</button>
     <ul data-js="pokedex" class="pokedex"></ul>
   </div>
@@ -21,19 +21,6 @@
   <script src="./app.js"></script>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript">
-            function limpar() {
-                $('.pokedex li').show();
-            }
-            function filtrar() {
-                var termo = $('#pesquisa').val().toUpperCase();
-                $('.pokedex li').each(function() { 
-                   if($(this).html().toUpperCase().indexOf(termo) === -1) {
-                       $(this).hide();
-                   }
-                });
-            }
-        </script>
-
+       
 </body>
 </html>

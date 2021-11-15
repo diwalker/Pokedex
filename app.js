@@ -38,8 +38,20 @@ function fetchPokemon() {
 fetchPokemon()
 
 function newFunction() {
-    var audio = new Audio('/media/opening.mp3');
+    var audio = new Audio('https://diwalker.github.io/pokedex/media/opening.mp3');
     audio.addEventListener('canplaythrough', function () {
         audio.play();
     });
 }
+
+function limpar() {
+                $('.pokedex li').show();
+            }
+            function filtrar() {
+                var termo = $('#pesquisa').val().toUpperCase();
+                $('.pokedex li').each(function() { 
+                   if($(this).html().toUpperCase().indexOf(termo) === -1) {
+                       $(this).hide();
+                   }
+                });
+            }

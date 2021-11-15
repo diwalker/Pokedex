@@ -43,3 +43,15 @@ function newFunction() {
         audio.play();
     });
 }
+
+function limpar() {
+                $('.pokedex li').show();
+            }
+            function filtrar() {
+                var termo = $('#pesquisa').val().toUpperCase();
+                $('.pokedex li').each(function() { 
+                   if($(this).html().toUpperCase().indexOf(termo) === -1) {
+                       $(this).hide();
+                   }
+                });
+            }
